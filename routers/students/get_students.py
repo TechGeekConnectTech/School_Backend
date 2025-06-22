@@ -10,7 +10,7 @@ logger=logging.getLogger(__name__)
 router=APIRouter()
 
 @router.get("/get_all_students")
-def get_students():
+def get_all_students():
     logger.info("Request Received to get all students info")
     return JSONResponse(
         status_code=200,
