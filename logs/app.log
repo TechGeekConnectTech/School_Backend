@@ -21,3 +21,129 @@
 [2025-06-29 11:19:05,496] [main] INFO : School Backend Application is getting started
 [2025-06-29 11:19:37,814] [main] INFO : School Backend Application is getting started
 [2025-06-29 11:19:57,067] [main] INFO : School Backend Application is getting started
+[2025-07-12 15:38:16,355] [main] INFO : School Backend Application is getting started
+[2025-07-12 15:39:10,880] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-12 15:39:37,837] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-12 15:43:44,593] [main] INFO : School Backend Application is getting started
+[2025-07-12 15:43:53,321] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-12 15:43:53,438] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-12 15:43:53,439] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:43:53,458] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-12 15:43:53,458] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:43:53,468] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-12 15:43:53,468] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:43:53,492] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-12 15:43:53,496] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-12 15:43:53,496] [sqlalchemy.engine.Engine] INFO : [generated in 0.00055s] {}
+[2025-07-12 15:43:53,511] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-12 15:45:20,811] [main] INFO : School Backend Application is getting started
+[2025-07-12 15:45:23,686] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-12 15:45:23,755] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-12 15:45:23,755] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:45:23,776] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-12 15:45:23,776] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:45:23,785] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-12 15:45:23,786] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:45:23,805] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-12 15:45:23,807] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-12 15:45:23,807] [sqlalchemy.engine.Engine] INFO : [generated in 0.00026s] {}
+[2025-07-12 15:45:23,818] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-12 15:46:05,034] [main] INFO : School Backend Application is getting started
+[2025-07-12 15:46:07,428] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-12 15:46:07,506] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-12 15:46:07,507] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:46:07,532] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-12 15:46:07,532] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:46:07,542] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-12 15:46:07,542] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:46:07,561] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-12 15:46:07,565] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-12 15:46:07,566] [sqlalchemy.engine.Engine] INFO : [generated in 0.00075s] {}
+[2025-07-12 15:46:07,585] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-12 15:46:44,959] [main] INFO : School Backend Application is getting started
+[2025-07-12 15:46:48,268] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-12 15:46:48,380] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-12 15:46:48,381] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:46:48,398] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-12 15:46:48,398] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:46:48,407] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-12 15:46:48,407] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:46:48,425] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-12 15:46:48,428] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-12 15:46:48,428] [sqlalchemy.engine.Engine] INFO : [generated in 0.00051s] {}
+[2025-07-12 15:46:48,439] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-12 15:47:13,744] [main] INFO : School Backend Application is getting started
+[2025-07-12 15:47:16,398] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-12 15:47:16,464] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-12 15:47:16,464] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:47:16,486] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-12 15:47:16,486] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:47:16,494] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-12 15:47:16,494] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:47:16,514] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-12 15:47:16,515] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-12 15:47:16,516] [sqlalchemy.engine.Engine] INFO : [generated in 0.00022s] {}
+[2025-07-12 15:47:16,527] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-12 15:48:29,330] [main] INFO : School Backend Application is getting started
+[2025-07-12 15:48:34,900] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-12 15:48:34,980] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-12 15:48:34,980] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:48:35,001] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-12 15:48:35,001] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:48:35,010] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-12 15:48:35,010] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:48:35,030] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-12 15:48:35,032] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-12 15:48:35,032] [sqlalchemy.engine.Engine] INFO : [generated in 0.00022s] {}
+[2025-07-12 15:48:35,043] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-12 15:49:07,602] [main] INFO : School Backend Application is getting started
+[2025-07-12 15:49:10,414] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-12 15:49:10,485] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-12 15:49:10,485] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:49:10,503] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-12 15:49:10,504] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:49:10,513] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-12 15:49:10,514] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:49:10,562] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-12 15:49:10,566] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-12 15:49:10,567] [sqlalchemy.engine.Engine] INFO : [generated in 0.00068s] {}
+[2025-07-12 15:49:10,577] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-12 15:49:53,758] [main] INFO : School Backend Application is getting started
+[2025-07-12 15:49:57,311] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-12 15:49:57,395] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-12 15:49:57,395] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:49:57,413] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-12 15:49:57,414] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:49:57,423] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-12 15:49:57,423] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:49:57,443] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-12 15:49:57,446] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-12 15:49:57,446] [sqlalchemy.engine.Engine] INFO : [generated in 0.00028s] {}
+[2025-07-12 15:49:57,456] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-12 15:53:40,855] [main] INFO : School Backend Application is getting started
+[2025-07-12 15:53:43,598] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-12 15:53:43,670] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-12 15:53:43,671] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:53:43,690] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-12 15:53:43,690] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:53:43,699] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-12 15:53:43,699] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-12 15:53:43,717] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-12 15:53:43,720] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-12 15:53:43,720] [sqlalchemy.engine.Engine] INFO : [generated in 0.00044s] {}
+[2025-07-12 15:53:43,731] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-12 16:04:28,691] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-12 16:04:28,692] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-12 16:04:28,693] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-12 16:04:28,693] [sqlalchemy.engine.Engine] INFO : [cached since 645s ago] {}
+[2025-07-12 16:04:28,705] [sqlalchemy.engine.Engine] INFO : ROLLBACK
