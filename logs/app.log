@@ -500,3 +500,367 @@ WHERE students.student_email = %(student_email_1)s
 FROM students
 [2025-07-13 16:10:10,938] [sqlalchemy.engine.Engine] INFO : [cached since 13.29s ago] {}
 [2025-07-13 16:10:10,948] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-19 11:26:09,669] [main] INFO : School Backend Application is getting started
+[2025-07-19 11:27:48,989] [main] INFO : School Backend Application is getting started
+[2025-07-19 11:35:11,992] [main] INFO : School Backend Application is getting started
+[2025-07-19 11:42:55,967] [main] INFO : School Backend Application is getting started
+[2025-07-19 11:47:07,188] [main] INFO : School Backend Application is getting started
+[2025-07-20 11:44:11,299] [main] INFO : School Backend Application is getting started
+[2025-07-26 12:34:58,734] [main] INFO : School Backend Application is getting started
+[2025-07-26 12:35:16,011] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-26 12:35:16,208] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 12:35:16,208] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:35:16,232] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 12:35:16,233] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:35:16,242] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 12:35:16,242] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:35:16,262] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 12:35:16,263] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-26 12:35:16,263] [sqlalchemy.engine.Engine] INFO : [generated in 0.00018s] {}
+[2025-07-26 12:35:16,415] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 12:40:42,952] [main] INFO : School Backend Application is getting started
+[2025-07-26 12:41:20,973] [routers.students.get_students] INFO : Request Received to get student by id
+[2025-07-26 12:45:39,341] [main] INFO : School Backend Application is getting started
+[2025-07-26 12:45:50,717] [routers.students.get_students] INFO : Request Received to get student by id
+[2025-07-26 12:45:50,803] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 12:45:50,803] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:45:50,820] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 12:45:50,821] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:45:50,831] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 12:45:50,832] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:45:50,851] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 12:45:50,854] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 12:45:50,855] [sqlalchemy.engine.Engine] INFO : [generated in 0.00029s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 12:45:50,871] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 12:51:07,666] [main] INFO : School Backend Application is getting started
+[2025-07-26 12:51:29,653] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-26 12:51:29,761] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 12:51:29,761] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:51:29,786] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 12:51:29,786] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:51:29,798] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 12:51:29,799] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:51:29,825] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 12:51:29,831] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-26 12:51:29,831] [sqlalchemy.engine.Engine] INFO : [generated in 0.00064s] {}
+[2025-07-26 12:51:29,847] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 12:52:10,492] [routers.students.get_students] INFO : Request Received to get student by id
+[2025-07-26 12:52:10,494] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 12:52:10,497] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 12:52:10,498] [sqlalchemy.engine.Engine] INFO : [generated in 0.00106s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 12:52:10,512] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 12:52:54,957] [main] INFO : School Backend Application is getting started
+[2025-07-26 12:52:59,119] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 12:52:59,350] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 12:52:59,350] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:52:59,480] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 12:52:59,481] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:52:59,536] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 12:52:59,536] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:52:59,604] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 12:52:59,607] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 12:52:59,608] [sqlalchemy.engine.Engine] INFO : [generated in 0.00049s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 12:53:00,084] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 12:54:51,108] [main] INFO : School Backend Application is getting started
+[2025-07-26 12:54:55,030] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 12:54:55,127] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 12:54:55,128] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:54:55,145] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 12:54:55,145] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:54:55,152] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 12:54:55,153] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:54:55,172] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 12:54:55,177] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 12:54:55,177] [sqlalchemy.engine.Engine] INFO : [generated in 0.00053s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 12:54:55,190] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 12:55:58,320] [main] INFO : School Backend Application is getting started
+[2025-07-26 12:56:01,961] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 12:56:02,062] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 12:56:02,063] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:56:02,083] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 12:56:02,084] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:56:02,099] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 12:56:02,099] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:56:02,121] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 12:56:02,123] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 12:56:02,124] [sqlalchemy.engine.Engine] INFO : [generated in 0.00020s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 12:56:02,137] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 12:56:35,128] [main] INFO : School Backend Application is getting started
+[2025-07-26 12:56:38,066] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 12:56:38,354] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 12:56:38,354] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:56:38,371] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 12:56:38,372] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:56:38,381] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 12:56:38,381] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:56:38,403] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 12:56:38,406] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 12:56:38,407] [sqlalchemy.engine.Engine] INFO : [generated in 0.00168s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 12:56:38,418] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 12:57:47,982] [main] INFO : School Backend Application is getting started
+[2025-07-26 12:57:51,214] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 12:57:51,313] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 12:57:51,313] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:57:51,337] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 12:57:51,338] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:57:51,350] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 12:57:51,351] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 12:57:51,376] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 12:57:51,378] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 12:57:51,379] [sqlalchemy.engine.Engine] INFO : [generated in 0.00041s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 12:57:51,391] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 12:58:31,053] [main] INFO : School Backend Application is getting started
+[2025-07-26 12:58:35,712] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:01:11,404] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:01:16,101] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:01:16,217] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:01:16,217] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:01:16,251] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:01:16,251] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:01:16,267] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:01:16,267] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:01:16,295] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:01:16,298] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 13:01:16,299] [sqlalchemy.engine.Engine] INFO : [generated in 0.00042s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 13:01:16,316] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:06:12,892] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:06:18,956] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:06:19,057] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:06:19,058] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:06:19,082] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:06:19,083] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:06:19,095] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:06:19,096] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:06:19,119] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:06:19,120] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-26 13:06:19,121] [sqlalchemy.engine.Engine] INFO : [generated in 0.00057s] {}
+[2025-07-26 13:06:19,134] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:07:26,752] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:07:32,427] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:07:49,918] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:07:52,356] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:07:52,517] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:07:52,517] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:07:52,556] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:07:52,556] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:07:52,576] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:07:52,576] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:07:52,604] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:07:52,608] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-26 13:07:52,608] [sqlalchemy.engine.Engine] INFO : [generated in 0.00051s] {}
+[2025-07-26 13:07:52,623] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:08:46,744] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:08:48,029] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:08:48,146] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:08:48,146] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:08:48,174] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:08:48,174] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:08:48,188] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:08:48,188] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:08:48,216] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:08:48,219] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 13:08:48,219] [sqlalchemy.engine.Engine] INFO : [generated in 0.00023s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 13:08:48,233] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-26 13:08:48,233] [sqlalchemy.engine.Engine] INFO : [generated in 0.00029s] {}
+[2025-07-26 13:08:48,251] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:09:34,624] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:09:39,544] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:09:39,648] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:09:39,649] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:09:39,669] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:09:39,669] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:09:39,678] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:09:39,678] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:09:39,695] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:09:39,698] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 13:09:39,699] [sqlalchemy.engine.Engine] INFO : [generated in 0.00036s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 13:09:39,709] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:12:19,992] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:12:24,151] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:12:24,293] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:12:24,294] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:12:24,332] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:12:24,332] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:12:24,346] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:12:24,347] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:12:24,391] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:12:24,394] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 13:12:24,394] [sqlalchemy.engine.Engine] INFO : [generated in 0.00054s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 13:12:24,412] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:12:40,467] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:12:44,944] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:12:45,022] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:12:45,022] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:12:45,050] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:12:45,050] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:12:45,059] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:12:45,059] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:12:45,077] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:12:45,082] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 13:12:45,082] [sqlalchemy.engine.Engine] INFO : [generated in 0.00045s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 13:12:45,091] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:13:39,265] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:13:42,107] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:13:42,195] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:13:42,195] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:13:42,219] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:13:42,219] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:13:42,228] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:13:42,228] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:13:42,248] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:13:42,250] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 13:13:42,250] [sqlalchemy.engine.Engine] INFO : [generated in 0.00027s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 13:13:42,261] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:17:21,408] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:17:25,828] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:17:25,943] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:17:25,943] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:17:25,969] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:17:25,970] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:17:25,983] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:17:25,984] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:17:26,023] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:17:26,028] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id, students.student_name, students.student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s
+[2025-07-26 13:17:26,028] [sqlalchemy.engine.Engine] INFO : [generated in 0.00043s] {'student_id_1': 1}
+[2025-07-26 13:17:26,047] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:18:04,266] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:18:06,162] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:18:06,251] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:18:06,251] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:18:06,268] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:18:06,268] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:18:06,277] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:18:06,277] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:18:06,302] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:18:06,305] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id, students.student_name, students.student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s
+[2025-07-26 13:18:06,305] [sqlalchemy.engine.Engine] INFO : [generated in 0.00026s] {'student_id_1': 1}
+[2025-07-26 13:18:06,316] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:18:27,448] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:18:33,088] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:18:33,153] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:18:33,153] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:18:33,173] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:18:33,174] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:18:33,182] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:18:33,182] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:18:33,199] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:18:33,203] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id, students.student_name, students.student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s
+[2025-07-26 13:18:33,203] [sqlalchemy.engine.Engine] INFO : [generated in 0.00041s] {'student_id_1': 1}
+[2025-07-26 13:18:33,214] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:19:09,839] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:19:13,281] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:19:13,360] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:19:13,360] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:19:13,376] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:19:13,378] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:19:13,385] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:19:13,385] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:19:13,402] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:19:13,405] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id, students.student_name, students.student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s
+[2025-07-26 13:19:13,406] [sqlalchemy.engine.Engine] INFO : [generated in 0.00072s] {'student_id_1': 1}
+[2025-07-26 13:19:13,416] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:30:32,713] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:30:47,180] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:30:47,273] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:30:47,273] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:30:47,290] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:30:47,291] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:30:47,299] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:30:47,300] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:30:47,320] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:30:47,323] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 13:30:47,323] [sqlalchemy.engine.Engine] INFO : [generated in 0.00054s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 13:30:47,336] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:33:06,775] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:33:10,727] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:33:10,841] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:33:10,841] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:33:10,870] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:33:10,870] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:33:10,883] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:33:10,884] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:33:10,910] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:33:10,915] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 13:33:10,916] [sqlalchemy.engine.Engine] INFO : [generated in 0.00063s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 13:33:10,929] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:33:56,936] [main] INFO : School Backend Application is getting started
+[2025-07-26 13:33:59,954] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-26 13:34:00,048] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-26 13:34:00,048] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:34:00,073] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-26 13:34:00,073] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:34:00,086] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-26 13:34:00,086] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-26 13:34:00,114] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:34:00,119] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 13:34:00,120] [sqlalchemy.engine.Engine] INFO : [generated in 0.00065s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-26 13:34:00,134] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-26 13:34:30,064] [routers.students.get_students] INFO : Request Received to get student by name : Ranjiv Singh
+[2025-07-26 13:34:30,072] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-26 13:34:30,074] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_name = %(student_name_1)s 
+ LIMIT %(param_1)s
+[2025-07-26 13:34:30,075] [sqlalchemy.engine.Engine] INFO : [generated in 0.00095s] {'student_name_1': 'Ranjiv Singh', 'param_1': 1}
+[2025-07-26 13:34:30,102] [sqlalchemy.engine.Engine] INFO : ROLLBACK

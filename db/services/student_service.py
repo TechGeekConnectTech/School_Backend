@@ -1,5 +1,6 @@
 from db.model import models as M
 from sqlalchemy.orm import Session
+from sqlalchemy import select
 
 from db.model.models import StudentManager
 from db.schemas.schemas import StudentBase
@@ -13,6 +14,21 @@ class StudentServiceManager:
             return q.all()
         except Exception as e:
             return None
+
+    def display_student_details_by_name(db: Session,student_name):
+        q = db.query(M.StudentManager).filter_by(student_name=student_name).first()
+        try:
+            return q
+        except Exception as e:
+            return None
+
+    def display_student_details_by_id(db: Session,student_id:int):
+        q = db.query(M.StudentManager).filter_by(student_id=student_id).first()
+        try:
+            return q
+        except Exception as e:
+            return None
+
 
     def insert_student_details(db:Session,student_name,student_email):
         try:

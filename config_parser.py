@@ -2,6 +2,7 @@ import json
 
 def parse_file(filename="db_connection.json"):
     try:
+        print(filename)
         with open(filename) as f:
             return json.load(f)
     except Exception as e:

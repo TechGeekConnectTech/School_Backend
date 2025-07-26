@@ -3,5 +3,5 @@
   "DB_PASSWORD":"admin123",
   "DB_IP":"195.35.6.88",
   "DB_PORT":3306,
-  "DB_NAME":"School_Backend"
+  "DB_NAME":"School_backend_new"
 }
