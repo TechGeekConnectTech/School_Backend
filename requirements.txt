@@ -4,3 +4,5 @@ starlette
 sqlalchemy
 pymysql
 cryptography
+pytest
+httpx
