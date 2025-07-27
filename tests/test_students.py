@@ -29,8 +29,8 @@ def test_get_students_by_id():
 
 def test_insert_student():
     response = client.post("/api/student/insert_student_record",json={
-    "student_name":"rahul2 patil",
-    "student_email":"rahul2@gmail.com"
+    "student_name":"rahul4 patil",
+    "student_email":"rahul4@gmail.com"
 })
     assert response.status_code == 201
     data = response.json()

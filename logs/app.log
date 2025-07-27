@@ -1436,3 +1436,181 @@ FROM students
 [2025-07-27 14:04:23,835] [sqlalchemy.engine.Engine] INFO : [cached since 0.2002s ago] {}
 [2025-07-27 14:04:23,847] [sqlalchemy.engine.Engine] INFO : ROLLBACK
 [2025-07-27 14:04:23,867] [httpx] INFO : HTTP Request: POST http://testserver/api/student/insert_student_record "HTTP/1.1 201 Created"
+[2025-07-27 14:07:04,352] [main] INFO : School Backend Application is getting started
+[2025-07-27 14:07:04,379] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:07:04,385] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-27 14:07:04,474] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-27 14:07:04,474] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-27 14:07:04,499] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-27 14:07:04,499] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-27 14:07:04,512] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-27 14:07:04,512] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-27 14:07:04,540] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:07:04,545] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-27 14:07:04,546] [sqlalchemy.engine.Engine] INFO : [generated in 0.00131s] {}
+[2025-07-27 14:07:04,566] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:07:04,633] [httpx] INFO : HTTP Request: GET http://testserver/api/student/get_all_students "HTTP/1.1 200 OK"
+[2025-07-27 14:07:04,646] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:07:04,654] [routers.students.get_students] INFO : Request Received to get student by name : Ranjiv Singh
+[2025-07-27 14:07:04,658] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:07:04,664] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_name = %(student_name_1)s 
+ LIMIT %(param_1)s
+[2025-07-27 14:07:04,665] [sqlalchemy.engine.Engine] INFO : [generated in 0.00113s] {'student_name_1': 'Ranjiv Singh', 'param_1': 1}
+[2025-07-27 14:07:04,696] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:07:04,721] [httpx] INFO : HTTP Request: GET http://testserver/api/student/get_students_by_name/Ranjiv%20Singh "HTTP/1.1 200 OK"
+[2025-07-27 14:07:04,732] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:07:04,740] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-27 14:07:04,743] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:07:04,746] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-27 14:07:04,746] [sqlalchemy.engine.Engine] INFO : [generated in 0.00080s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-27 14:07:04,762] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:07:04,790] [httpx] INFO : HTTP Request: GET http://testserver/api/student/get_students_by_id/1 "HTTP/1.1 200 OK"
+[2025-07-27 14:07:04,800] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:07:04,812] [routers.students.post_students] INFO : Request Received to insert student record
+[2025-07-27 14:07:04,814] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:07:04,817] [sqlalchemy.engine.Engine] INFO : INSERT INTO students (student_name, student_email) VALUES (%(student_name)s, %(student_email)s)
+[2025-07-27 14:07:04,818] [sqlalchemy.engine.Engine] INFO : [generated in 0.00099s] {'student_name': 'rahul2 patil', 'student_email': 'rahul2@gmail.com'}
+[2025-07-27 14:07:04,831] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:07:04,863] [httpx] INFO : HTTP Request: POST http://testserver/api/student/insert_student_record "HTTP/1.1 500 Internal Server Error"
+[2025-07-27 14:07:18,873] [main] INFO : School Backend Application is getting started
+[2025-07-27 14:07:18,974] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:07:18,981] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-27 14:07:19,062] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-27 14:07:19,063] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-27 14:07:19,083] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-27 14:07:19,083] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-27 14:07:19,097] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-27 14:07:19,097] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-27 14:07:19,116] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:07:19,119] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-27 14:07:19,119] [sqlalchemy.engine.Engine] INFO : [generated in 0.00089s] {}
+[2025-07-27 14:07:19,132] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:07:19,155] [httpx] INFO : HTTP Request: GET http://testserver/api/student/get_all_students "HTTP/1.1 200 OK"
+[2025-07-27 14:07:19,173] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:07:19,181] [routers.students.get_students] INFO : Request Received to get student by name : Ranjiv Singh
+[2025-07-27 14:07:19,183] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:07:19,185] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_name = %(student_name_1)s 
+ LIMIT %(param_1)s
+[2025-07-27 14:07:19,185] [sqlalchemy.engine.Engine] INFO : [generated in 0.00051s] {'student_name_1': 'Ranjiv Singh', 'param_1': 1}
+[2025-07-27 14:07:19,200] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:07:19,224] [httpx] INFO : HTTP Request: GET http://testserver/api/student/get_students_by_name/Ranjiv%20Singh "HTTP/1.1 200 OK"
+[2025-07-27 14:07:19,232] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:07:19,239] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-27 14:07:19,241] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:07:19,244] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-27 14:07:19,244] [sqlalchemy.engine.Engine] INFO : [generated in 0.00086s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-27 14:07:19,257] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:07:19,278] [httpx] INFO : HTTP Request: GET http://testserver/api/student/get_students_by_id/1 "HTTP/1.1 200 OK"
+[2025-07-27 14:07:19,284] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:07:19,293] [routers.students.post_students] INFO : Request Received to insert student record
+[2025-07-27 14:07:19,295] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:07:19,300] [sqlalchemy.engine.Engine] INFO : INSERT INTO students (student_name, student_email) VALUES (%(student_name)s, %(student_email)s)
+[2025-07-27 14:07:19,300] [sqlalchemy.engine.Engine] INFO : [generated in 0.00066s] {'student_name': 'rahul3 patil', 'student_email': 'rahul3@gmail.com'}
+[2025-07-27 14:07:19,310] [sqlalchemy.engine.Engine] INFO : COMMIT
+[2025-07-27 14:07:19,332] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:07:19,332] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-27 14:07:19,332] [sqlalchemy.engine.Engine] INFO : [cached since 0.2135s ago] {}
+[2025-07-27 14:07:19,344] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:07:19,363] [httpx] INFO : HTTP Request: POST http://testserver/api/student/insert_student_record "HTTP/1.1 201 Created"
+[2025-07-27 14:10:48,214] [main] INFO : School Backend Application is getting started
+[2025-07-27 14:10:48,243] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:10:48,250] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-27 14:10:48,355] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-27 14:10:48,355] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-27 14:10:48,375] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-27 14:10:48,375] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-27 14:10:48,384] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-27 14:10:48,385] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-27 14:10:48,406] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:10:48,412] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-27 14:10:48,413] [sqlalchemy.engine.Engine] INFO : [generated in 0.00121s] {}
+[2025-07-27 14:10:48,428] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:10:48,449] [httpx] INFO : HTTP Request: GET http://testserver/api/student/get_all_students "HTTP/1.1 200 OK"
+[2025-07-27 14:10:48,458] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:10:48,465] [routers.students.get_students] INFO : Request Received to get student by name : Ranjiv Singh
+[2025-07-27 14:10:48,467] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:10:48,471] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_name = %(student_name_1)s 
+ LIMIT %(param_1)s
+[2025-07-27 14:10:48,471] [sqlalchemy.engine.Engine] INFO : [generated in 0.00086s] {'student_name_1': 'Ranjiv Singh', 'param_1': 1}
+[2025-07-27 14:10:48,484] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:10:48,507] [httpx] INFO : HTTP Request: GET http://testserver/api/student/get_students_by_name/Ranjiv%20Singh "HTTP/1.1 200 OK"
+[2025-07-27 14:10:48,517] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:10:48,524] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-27 14:10:48,527] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:10:48,529] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-27 14:10:48,529] [sqlalchemy.engine.Engine] INFO : [generated in 0.00065s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-27 14:10:48,540] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:10:48,570] [httpx] INFO : HTTP Request: GET http://testserver/api/student/get_students_by_id/1 "HTTP/1.1 200 OK"
+[2025-07-27 14:10:48,575] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:10:48,581] [routers.students.post_students] INFO : Request Received to insert student record
+[2025-07-27 14:10:48,583] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:10:48,585] [sqlalchemy.engine.Engine] INFO : INSERT INTO students (student_name, student_email) VALUES (%(student_name)s, %(student_email)s)
+[2025-07-27 14:10:48,585] [sqlalchemy.engine.Engine] INFO : [generated in 0.00041s] {'student_name': 'rahul3 patil', 'student_email': 'rahul3@gmail.com'}
+[2025-07-27 14:10:48,604] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:10:48,637] [httpx] INFO : HTTP Request: POST http://testserver/api/student/insert_student_record "HTTP/1.1 500 Internal Server Error"
+[2025-07-27 14:11:51,510] [main] INFO : School Backend Application is getting started
+[2025-07-27 14:11:51,540] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:11:51,545] [routers.students.get_students] INFO : Request Received to get all students info
+[2025-07-27 14:11:51,630] [sqlalchemy.engine.Engine] INFO : SELECT DATABASE()
+[2025-07-27 14:11:51,631] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-27 14:11:51,650] [sqlalchemy.engine.Engine] INFO : SELECT @@sql_mode
+[2025-07-27 14:11:51,650] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-27 14:11:51,660] [sqlalchemy.engine.Engine] INFO : SELECT @@lower_case_table_names
+[2025-07-27 14:11:51,661] [sqlalchemy.engine.Engine] INFO : [raw sql] {}
+[2025-07-27 14:11:51,684] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:11:51,689] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-27 14:11:51,690] [sqlalchemy.engine.Engine] INFO : [generated in 0.00140s] {}
+[2025-07-27 14:11:51,703] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:11:51,723] [httpx] INFO : HTTP Request: GET http://testserver/api/student/get_all_students "HTTP/1.1 200 OK"
+[2025-07-27 14:11:51,735] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:11:51,741] [routers.students.get_students] INFO : Request Received to get student by name : Ranjiv Singh
+[2025-07-27 14:11:51,742] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:11:51,746] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_name = %(student_name_1)s 
+ LIMIT %(param_1)s
+[2025-07-27 14:11:51,747] [sqlalchemy.engine.Engine] INFO : [generated in 0.00100s] {'student_name_1': 'Ranjiv Singh', 'param_1': 1}
+[2025-07-27 14:11:51,760] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:11:51,780] [httpx] INFO : HTTP Request: GET http://testserver/api/student/get_students_by_name/Ranjiv%20Singh "HTTP/1.1 200 OK"
+[2025-07-27 14:11:51,787] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:11:51,795] [routers.students.get_students] INFO : Request Received to get student by id : 1
+[2025-07-27 14:11:51,797] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:11:51,798] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students 
+WHERE students.student_id = %(student_id_1)s 
+ LIMIT %(param_1)s
+[2025-07-27 14:11:51,799] [sqlalchemy.engine.Engine] INFO : [generated in 0.00094s] {'student_id_1': 1, 'param_1': 1}
+[2025-07-27 14:11:51,811] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:11:51,835] [httpx] INFO : HTTP Request: GET http://testserver/api/student/get_students_by_id/1 "HTTP/1.1 200 OK"
+[2025-07-27 14:11:51,843] [asyncio] DEBUG : Using proactor: IocpProactor
+[2025-07-27 14:11:51,850] [routers.students.post_students] INFO : Request Received to insert student record
+[2025-07-27 14:11:51,852] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:11:51,854] [sqlalchemy.engine.Engine] INFO : INSERT INTO students (student_name, student_email) VALUES (%(student_name)s, %(student_email)s)
+[2025-07-27 14:11:51,855] [sqlalchemy.engine.Engine] INFO : [generated in 0.00073s] {'student_name': 'rahul4 patil', 'student_email': 'rahul4@gmail.com'}
+[2025-07-27 14:11:51,867] [sqlalchemy.engine.Engine] INFO : COMMIT
+[2025-07-27 14:11:51,887] [sqlalchemy.engine.Engine] INFO : BEGIN (implicit)
+[2025-07-27 14:11:51,889] [sqlalchemy.engine.Engine] INFO : SELECT students.student_id AS students_student_id, students.student_name AS students_student_name, students.student_email AS students_student_email 
+FROM students
+[2025-07-27 14:11:51,889] [sqlalchemy.engine.Engine] INFO : [cached since 0.2002s ago] {}
+[2025-07-27 14:11:51,901] [sqlalchemy.engine.Engine] INFO : ROLLBACK
+[2025-07-27 14:11:51,922] [httpx] INFO : HTTP Request: POST http://testserver/api/student/insert_student_record "HTTP/1.1 201 Created"

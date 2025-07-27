@@ -6,3 +6,5 @@ pymysql
 cryptography
 pytest
 httpx
+pytest-cov
+pytest-html
